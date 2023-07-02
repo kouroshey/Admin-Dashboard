@@ -1,0 +1,55 @@
+.topbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 0 5px gray;
+  z-index: 999;
+}
+.topbar .topbar-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar .topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.topbar .topbar-right .topbar-right-profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url(./../../../public/images/profile.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.topbar .topbar-right img {
+  width: 100%;
+}
+.topbar .topbar-right .topbar-icon-container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.topbar .topbar-right .topbar-icon-container svg {
+  width: 100%;
+  height: 100%;
+  color: #4a4a4a;
+}
+.topbar .topbar-right .topbar-icon-container span {
+  color: #ffffff;
+  background-color: #1280da;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+}/*# sourceMappingURL=TopBar.css.map */

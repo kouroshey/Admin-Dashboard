@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.sidebar {
+    
+    background-color: $light-blue-color;
+    height: 100vh;
+    position: fixed;
+    .sidebar-container {
+        padding: 2rem 3rem 3rem 0;
+
+        p {
+            padding-top: 2rem;
+            padding-bottom: 0.8rem;
+            font-weight: 900;
+            color: #666666;
+            font-size: 0.9rem;
+            padding-left: 1rem;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+            padding-left: 2rem;
+            padding-bottom: 0.5rem;
+            font-size: 1.1rem;
+            color: #343434;
+            
+        }
+    }
+}
