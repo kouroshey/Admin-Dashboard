@@ -1,31 +1,48 @@
 @import '../../variables.scss';
 
 .sidebar {
-    
+
     background-color: $light-blue-color;
+    position: sticky;
     height: 100vh;
-    position: fixed;
+    flex: 1;
+
     .sidebar-container {
-        padding: 2rem 3rem 3rem 0;
+        padding:  0 2rem;
 
         p {
-            padding-top: 2rem;
-            padding-bottom: 0.8rem;
+            padding-top: 1rem;
+            padding-bottom: 0.2rem;
             font-weight: 900;
             color: #666666;
             font-size: 0.9rem;
-            padding-left: 1rem;
+
         }
 
         li {
             display: flex;
             align-items: center;
             column-gap: 0.5rem;
-            padding-left: 2rem;
-            padding-bottom: 0.5rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #343434;
-            
+            width: 100%;
+            padding: 0.5rem 0.2rem ;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            padding-left: 1rem;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
         }
     }
+}
+
+
+li:hover , .active {
+   background: $blue-color; 
+   cursor: pointer;
 }

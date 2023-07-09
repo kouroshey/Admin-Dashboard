@@ -2,14 +2,14 @@
 
 .topbar {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: #ffff;
     box-shadow: 0 0 5px gray;
     z-index: 999;
 
     .topbar-container {
-        width: 95%;
+        width: 98%;
         margin: 0 auto;
         padding: 0.5rem 0;
         display: flex;
@@ -24,8 +24,8 @@
         gap: 1rem;
 
         .topbar-right-profile {
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background-image: url(./../../../public/images/profile.jpg);
             background-position: center;
@@ -37,8 +37,8 @@
         }
 
         .topbar-icon-container {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             position: relative;
 
             svg {
@@ -50,8 +50,8 @@
             span {
                 color: #ffffff;
                 background-color: $dark-blue-color;
-                width: 20px;
-                height: 20px;
+                width: 15px;
+                height: 15px;
                 position: absolute;
                 border-radius: 50%  ;
                 display: flex;

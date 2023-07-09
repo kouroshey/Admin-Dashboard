@@ -1,0 +1,22 @@
+.features-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.arrow-up {
+    color: green;
+
+}
+
+.arrow-down {
+    color: red;
+    transform: rotate(180deg);
+}
+
+.arrow-down , .arrow-down {
+    width: 2rem;
+    height: 2rem;
+}
