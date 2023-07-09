@@ -2,7 +2,7 @@
 
 .sidebar {
 
-    background-color: $light-blue-color;
+    background-color: #eee3ff;
     position: sticky;
     height: 100vh;
     flex: 1;
@@ -43,6 +43,6 @@
 
 
 li:hover , .active {
-   background: $blue-color; 
+   background: #ddc8ff; 
    cursor: pointer;
 }
