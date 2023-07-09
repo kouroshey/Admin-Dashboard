@@ -29,7 +29,6 @@ export default function TopBar() {
               <SettingsIcon />
             </div>
             <div className="topbar-right-profile">
-              {/* <img src="images/profile.jpg" alt="" srcset="" /> */}
             </div>
           </div>
         </div>

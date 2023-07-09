@@ -1,0 +1,48 @@
+.new-user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(./../../../public/images/profile.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.new-user-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px 2px #ddc8ff;
+    }
+}
+
+.new-user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.new-user-name {    
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.new-user-job {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.new-user-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color:#ddc8ff ;
+    border-radius: 8px;
+}

@@ -4,11 +4,11 @@
 
     background-color: #eee3ff;
     position: sticky;
-    height: 100vh;
     flex: 1;
 
     .sidebar-container {
         padding:  0 2rem;
+        position: sticky;
 
         p {
             padding-top: 1rem;
