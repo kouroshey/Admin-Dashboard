@@ -1,8 +1,7 @@
 import './Chart.scss'
-import React from 'react';
 import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-export default function Chart({ title, data, dataKey, grid }) {
+export default function Chart({ title,data, dataKey, grid }) {
 
     return (
         <>

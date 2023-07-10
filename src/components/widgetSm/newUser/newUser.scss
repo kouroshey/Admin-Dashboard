@@ -2,7 +2,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url(./../../../public/images/profile.jpg);
+    background-image: url(./../../../../public/images/profile.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -12,12 +12,16 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    // border: 1px solid #ddc8ff;
+    box-shadow: 0 0 5px 1px #ddc8ff;
+    border-radius: 8px;
+    padding: 1rem;
 
     img {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        box-shadow: 0 0 5px 2px #ddc8ff;
+        
     }
 }
 
@@ -29,13 +33,14 @@
 }
 
 .new-user-name {    
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .new-user-job {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .new-user-btn {
@@ -43,6 +48,11 @@
     align-items: center;
     column-gap: 0.5rem;
     padding: 0.5rem 1.5rem;
-    background-color:#ddc8ff ;
+    background-color:#eee3ff ;
     border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.new-user-btn:hover {
+    background-color: #ddc8ff;
 }

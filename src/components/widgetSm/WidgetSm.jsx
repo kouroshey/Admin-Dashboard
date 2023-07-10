@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './WidgetSm.scss'
-import NewUser from '../newUser/NewUser'
+import NewUser from './newUser/NewUser'
 
 export default function WidgetSm() {
     const [newUsers, setNewUsers] = useState([])
@@ -21,7 +21,6 @@ export default function WidgetSm() {
             
     }, [])
 
-    console.log(newUsers)
     return (
         <>
             <div className="widget-sm-container">

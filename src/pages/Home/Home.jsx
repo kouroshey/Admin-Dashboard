@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Home.scss'
 import Feature from '../../components/feature/Feature'
 import Chart from '../../components/chart/Chart'
-import { xAxisData } from '../../datas'
 import WidgetSm from '../../components/widgetSm/WidgetSm'
+import WidgetLg from '../../components/widgetLg/WidgetLg'
 
 
 export default function Home() {
@@ -12,6 +12,19 @@ export default function Home() {
         { id: 2, title: 'Sales', iconStyle: 'arrow-down', value: "4,550", percent: -1.4 },
         { id: 3, title: 'Cost', iconStyle: 'arrow-up', value: "2,135", percent: +2.8 },
     ])
+
+    const [xAxisData, setXAxisData] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/fetch-xAxisData', {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify()
+        })
+            .then(response => response.json())
+            .then(data => setXAxisData(data.xAxisData))
+        }, [])
 
     return (
         <>
@@ -24,11 +37,12 @@ export default function Home() {
                 </div>
 
                 <div className="chart-wrapper">
-                    <Chart title='Month Sale' data={xAxisData} dataKey='sale' grid></Chart>
+                    <Chart title='Month Sale' dataKey='sale' data={xAxisData} grid></Chart>
                 </div>
 
                 <div className="widgets-wrapper">
-                        <WidgetSm/>
+                    <WidgetSm />
+                    <WidgetLg/>
                 </div>
             </div>
         </>

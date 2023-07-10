@@ -1,0 +1,33 @@
+.widget-lg-container {
+    flex: 2;
+    padding: 2rem;
+    box-shadow: 0 0 26px -10px gray;
+    border-radius: 8px;
+
+    .transactions-table {
+        width: 100%;
+        border-spacing: 1.5rem;
+
+    }
+
+    .transaction-th {
+        text-align: center;
+    }
+
+    .th-customer {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+    }
+
+}
+
+.transaction-tr {
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+}

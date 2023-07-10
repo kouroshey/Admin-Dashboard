@@ -5,9 +5,11 @@
     background-color: #eee3ff;
     position: sticky;
     flex: 1;
+    height: calc(100vh - 50px);
+    top: 50px;
 
     .sidebar-container {
-        padding:  0 2rem;
+        padding: 0 2rem;
         position: sticky;
 
         p {
@@ -26,7 +28,7 @@
             font-size: 1rem;
             color: #343434;
             width: 100%;
-            padding: 0.5rem 0.2rem ;
+            padding: 0.5rem 0.2rem;
             border-radius: 8px;
             transition: all 0.3s ease;
             padding-left: 1rem;
@@ -42,7 +44,8 @@
 }
 
 
-li:hover , .active {
-   background: #ddc8ff; 
-   cursor: pointer;
+li:hover,
+.active {
+    background: #ddc8ff;
+    cursor: pointer;
 }
