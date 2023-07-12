@@ -75,10 +75,10 @@ export default function UserList() {
         return (
           <>
             <div className="userList-actions-container">
-              <Link className='link userList-actions-linkElem' >
+              <Link className='link userList-actions-linkElem' sx = {{color: '#b98eff'}} >
                 Edit
-              </Link>
                 <EditIcon fontSize='medium'/>
+              </Link>
               <Link className='link userList-actions-linkElem' >
                 Delete <DeleteIcon fontSize='medium' color='error'  onClick={() => userDeleteHandler(params.row.id)} />
               </Link>
@@ -92,6 +92,7 @@ export default function UserList() {
   return (
     <>
       <div className="data-grid-container">
+        <h2 className='userList-title'>List of users</h2>
         <DataGrid
           columns={columns}
           rows={userDatas}

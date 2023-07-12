@@ -1,7 +1,25 @@
 .data-grid-container {
     display: flex;
+    flex-direction: column;
     flex: 4;
     padding: 2rem;
+}
+
+.userList-title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.userList-title::after {
+    content: "";
+    width: 500px;
+    height: 3px;
+    position: absolute;
+    bottom: 59px;
+    background: #b98eff;
+    left: 0;
 }
 
 .userList-user-avatar {
@@ -29,10 +47,15 @@
     column-gap: 1.5rem;
 }
 
-.userList-actions-linkElem  {
+.userList-actions-linkElem {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
 
-
+.userList-actions-linkElem:hover {
+    background-color: #eee3ff;
 }

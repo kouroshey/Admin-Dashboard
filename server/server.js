@@ -117,6 +117,26 @@ app.get('/fetch-user-list', (req,res) => {
 })
 
 
+app.get('/fetch-products', (req, res) => {
+    res.json({
+        "products": [
+            { id: 1, img: '/images/products/1.jpg', name: 'Asus', price: '$4,200' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 2, img: '/images/products/2.jpg', name: 'Windows', price: '$2,200' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 3, img: '/images/products/3.jpg', name: 'HP NoteBook', price: '$100' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 4, img: '/images/products/4.jpg', name: 'HP Zbook', price: '$1000' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 5, img: '/images/products/5.jpg', name: 'HP OMEN', price: '$8000' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 6, img: '/images/products/6.png', name: 'ASUS Gaming', price: '$2000' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 7, img: '/images/products/7.jpg', name: 'Lenovo p5024', price: '$622' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 8, img: '/images/products/8.jpg', name: 'Lenovo f54', price: '$6517' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 9, img: '/images/products/9.jpg', name: 'Lenovo e504', price: '$6000' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 10, img: '/images/products/10.jpg', name: 'MacBook', price: '$2400' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 10, img: '/images/products/11.jpg', name: 'MacBook pro', price: '$2345' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"},
+            { id: 10, img: '/images/products/12.jpg', name: 'MacBook pro 2', price: '$622' ,desc:"Lorem Ipsum Lorem Ipsum Lorem"}
+        ]
+    })
+})
+
+
 
 
 app.listen(5000, () => {
