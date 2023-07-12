@@ -42,7 +42,7 @@ export default function Products() {
                                 <h3 className="product-price">{item.price}</h3>
                             </div>
                             <div className="product-actions-container">
-                                <Link className='link product-actions-linkElem' >
+                                <Link to={`edit-product/${item.id}`} className='link product-actions-linkElem' >
                                     Edit
                                     <EditIcon fontSize='medium' />
                                 </Link>

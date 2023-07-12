@@ -1,0 +1,39 @@
+.edit-product {
+    width: 100%;
+    padding: 2rem;
+}
+
+.editProduct-title-container {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .editProduct-btn {
+        padding: 0.5rem 2rem;
+        font-size: 1.3rem;
+        background-color:#eee3ff;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #b98eff;
+        }
+    }
+
+    .editProduct-title {
+        font-size: 3rem;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .editProduct-title::after {
+        content: "";
+        width: 500px;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        background: #b98eff;
+        left: 0;
+    }
+}

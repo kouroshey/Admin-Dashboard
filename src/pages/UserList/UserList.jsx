@@ -75,7 +75,7 @@ export default function UserList() {
         return (
           <>
             <div className="userList-actions-container">
-              <Link className='link userList-actions-linkElem' sx = {{color: '#b98eff'}} >
+              <Link to={`/users/${params.row.id}`} className='link userList-actions-linkElem' sx = {{color: '#b98eff'}} >
                 Edit
                 <EditIcon fontSize='medium'/>
               </Link>
