@@ -91,6 +91,31 @@ app.get('/fetch-transactions', (req, res) => {
     })
 })
 
+app.get('/fetch-user-list', (req,res) => {
+    res.json({
+        "users": [
+            {id:1,avatar:'/images/new-users/60.jpg' ,userName:'Rose P. Winn', email:'rose@email.com', status:'online', transaction:'230$'},
+            {id:2,avatar:'/images/new-users/16.jpg' ,userName:'Carol W. Murphy', email:'cacrol@email.com', status: 'offline', transaction:'2$'},
+            {id:3,avatar:'/images/new-users/23.jpg' ,userName:'Dominic M. Cruz', email:'Dominic@email.com', status: 'offline', transaction:'60$'},
+            {id:4,avatar:'/images/new-users/6.jpg' ,userName:'Danny J. Pinto', email:'Danny@email.com', status:'online', transaction:'120$'},
+            {id:5,avatar:'/images/new-users/77.jpg' ,userName:'Gloria E. Faber', email:'Gloria@email.com', status: 'offline', transaction:'25$'},
+            {id:6,avatar:'/images/new-users/38.jpg' ,userName:'Jeff D. Davis', email:'Jeff@email.com', status:'online', transaction:'98$'},
+            {id:7,avatar:'/images/new-users/78.jpg' ,userName:'Robert V. Jones', email:'Robert@email.com', status:'online', transaction:'652$'},
+            {id:8,avatar:'/images/new-users/67.jpg' ,userName:'Diana M. Tiffany', email:'Diana@email.com', status: 'offline', transaction:'5$'},
+            {id:9,avatar:'/images/transactions/22.jpg' ,userName:'Paul A Roberts', email:'Paul@email.com', status: 'offline', transaction:'$4,200'},
+            {id:10,avatar:'/images/transactions/33.jpg' ,userName:'Joy L Steward', email:'Joy@email.com', status:'online', transaction:'$2,200'},
+            {id:11,avatar:'/images/transactions/31.jpg' ,userName:'Diane D Odell', email:'Diane@email.com', status: 'offline', transaction:'$100'},
+            {id:12,avatar:'/images/transactions/3.jpg' ,userName:'Bernadette A Tucker', email:'Bernadette@email.com', status:'online', transaction:'$1000'},
+            {id:13,avatar:'/images/transactions/83.jpg' ,userName:'James P Moore', email:'James@email.com', status: 'offline', transaction:'$8000'},
+            {id:14,avatar:'/images/transactions/26.jpg' ,userName:"Paula L Wolford", email:'Paula@email.com', status:'online', transaction:'$20'},
+            {id:15,avatar:'/images/transactions/79.jpg' ,userName:'Harold P Cambra', email:'Harold@email.com', status: 'offline', transaction:'$622'},
+            {id:16,avatar:'/images/transactions/76.jpg' ,userName:'Jana W Hunter', email:'Jana@email.com', status:'online', transaction:'$6517'},
+            {id:17,avatar:'/images/transactions/26.jpg' ,userName:'Paula L Wolford', email:'Paula@email.com', status:'online', transaction:'$20'},
+            {id:18,avatar:'/images/transactions/79.jpg' ,userName:'Harold P Cambra', email:'Harold@email.com', status: 'offline', transaction:'$622'},
+        ]
+    })
+})
+
 
 
 
