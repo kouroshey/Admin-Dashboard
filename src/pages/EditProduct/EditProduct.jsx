@@ -37,6 +37,24 @@ export default function EditProduct() {
         }
         fetchData();
     }, [])
+    useEffect(() => {
+        const fetchData = async () => {
+            
+            fetch('https://shop-api-test.iran.liara.run', {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify()
+            })
+                .then(response => response.json())
+                .then(data => setProductData(data.products))
+            
+        }
+        fetchData();
+    }, [])
+
+
 
 
     let mainProductID = useParams().productID - 1
